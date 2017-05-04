@@ -42,7 +42,7 @@ class LinkedList {
             first = first.next;
             size--;
             return temp;
-        } else return 0;
+        } else return -1;
     }
     
     public void printList() {
@@ -129,17 +129,6 @@ public class LinkedMerge {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
         
-//        list.add(11); list.add(4);
-//        list.add(14);
-//        list.add(17);
-//        list.add(24); list.add(23); list.add(19); list.add(12);
-//        list.add(13); list.add(6);
-//        list.add(21); list.add(11); list.add(7);        
-//        list.add(16);
-//        list.add(21); list.add(18); list.add(9);
-//        list.add(22); list.add(8); list.add(5);
-//        list.add(20); list.add(15); list.add(10);
-        
         for(int i=0; i<99; i++)
             list.add( (int) (Math.random() * 500) );
         
@@ -148,9 +137,3 @@ public class LinkedMerge {
         list.printList();
     }
 }
-/*
-Stack contents: 
-10 15 20 5 8 22 9 18 21 16 7 11 21 6 13 12 19 23 24 17 14 4 11 
-Stack contents: 
-4 5 6 7 8 9 10 11 11 12 13 14 15 16 17 18 19 20 21 21 22 23 24
-*/
